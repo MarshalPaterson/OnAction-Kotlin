@@ -13,6 +13,6 @@ class OnActionTest {
                 assertTrue(it == "")
             }
         })
-        OnAction.doAction(ONE_ACTION, MSG_TXT)
+        // OnAction.doAction(ONE_ACTION, MSG_TXT)
     }
 }
