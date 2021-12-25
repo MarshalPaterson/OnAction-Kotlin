@@ -27,9 +27,19 @@ plugins {
 
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
+    `maven-publish`
 
     id ("maven-publish")
 }
+//plugins {
+//    `java-library`
+////    `maven-publish`
+////    signing
+//}
+
+//signing {
+//    sign(publishing.publications["mavenJava"])
+//}
 
 repositories {
     // Use Maven Central for resolving dependencies.
@@ -63,16 +73,30 @@ dependencies {
 //    testImplementation(kotlin("test"))
 }
 
+//publishing {
+//    publications {
+//        create("maven_public", MavenPublication::class) {
+//            groupId = "com.github.MarshalPaterson"
+//            artifactId = "OnAction"
+//            version = "0.1.2"
+//            from(components.getByName("java"))
+//        }
+//    }
+//}
+
 publishing {
     publications {
-        create("maven_public", MavenPublication::class) {
+        create<MavenPublication>("maven") {
             groupId = "com.github.MarshalPaterson"
             artifactId = "OnAction"
-            version = "0.1.2"
-            from(components.getByName("java"))
+            version = "0.1.5"
+
+            from(components["kotlin"])
         }
     }
 }
+
+
 
 //publishing {
 //    publications {
