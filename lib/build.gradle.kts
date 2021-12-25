@@ -43,6 +43,8 @@ plugins {
 
     // Apply the java-library plugin for API and implementation separation.
     `java-library`
+
+    id ("maven-publish")
 }
 
 repositories {
@@ -75,6 +77,29 @@ dependencies {
 
 //    testImplementation(kotlin("test"))
 }
+
+publishing {
+    publications {
+        create("maven_public", MavenPublication::class) {
+            groupId = "com.github.MarshalPaterson"
+            artifactId = "OnAction"
+            version = "0.1.2"
+            from(components.getByName("java"))
+        }
+    }
+}
+
+//publishing {
+//    publications {
+//        mavenJava(MavenPublication) {
+//            groupId = 'com.github.MarshalPaterson'
+//            artifactId = 'OnAction'
+//            version = '0.1.2'
+//
+//            from components.java
+//        }
+//    }
+//}
 
 //tasks.test {
 //    useJUnitPlatform()
