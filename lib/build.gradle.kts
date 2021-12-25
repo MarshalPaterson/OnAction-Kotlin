@@ -14,6 +14,25 @@ tasks.jar {
     }
 }
 
+//task install(type: Copy) {
+//    dependsOn subprojects*.tasks*.findByName('build').minus(null)
+//    doLast {
+//        println "exec install task"
+//    }
+//}
+//apply plugin: 'maven'
+//
+//task installArchives(type: Upload) {
+//    description "Installs the artifacts to the local Maven repository."
+//    configuration = configurations['archives']
+//    repositories {
+//        mavenDeployer {
+//            repository url: repositories.mavenLocal().url
+//        }
+//    }
+//}
+
+
 java {
     withSourcesJar()
 }
