@@ -6,7 +6,7 @@ import kotlin.test.assertTrue
 class OnActionTest {
     @Test fun onAction() {
         val ONE_ACTION = "ONE_ACTION"
-        val MSG_TXT = "NEW TEXT"
+//        val MSG_TXT = "NEW TEXT"
 
         OnAction.addOnAction(ONE_ACTION, object : OnAction.OnActionListener {
             override fun onAction(it: Any) {

@@ -5,6 +5,9 @@
  * For more details take a look at the 'Building Java & JVM projects' chapter in the Gradle
  * User Manual available at https://docs.gradle.org/7.2/userguide/building_java_projects.html
  */
+//apply plugin: 'maven'
+
+group = "com.github.MarshalPaterson"
 version = "0.1.0"
 
 tasks.jar {
@@ -13,25 +16,6 @@ tasks.jar {
             "Implementation-Version" to project.version))
     }
 }
-
-//task install(type: Copy) {
-//    dependsOn subprojects*.tasks*.findByName('build').minus(null)
-//    doLast {
-//        println "exec install task"
-//    }
-//}
-//apply plugin: 'maven'
-//
-//task installArchives(type: Upload) {
-//    description "Installs the artifacts to the local Maven repository."
-//    configuration = configurations['archives']
-//    repositories {
-//        mavenDeployer {
-//            repository url: repositories.mavenLocal().url
-//        }
-//    }
-//}
-
 
 java {
     withSourcesJar()
@@ -49,6 +33,7 @@ plugins {
 
 repositories {
     // Use Maven Central for resolving dependencies.
+    google()
     mavenCentral()
 }
 
