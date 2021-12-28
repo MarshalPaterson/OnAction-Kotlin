@@ -5,7 +5,9 @@ Android Library using Kotlin with the Observer Pattern. OnAction is a lightweigh
 
 Step 1. Add the JitPack repository to your build file
 ```
-maven { url 'https://jitpack.io' }
+repositories {
+    maven { url 'https://jitpack.io' }
+}
 ```
 Step 2. Add the dependency
 ```
@@ -13,3 +15,22 @@ dependencies {
     implementation 'com.github.MarshalPaterson:OnAction:1.6.8'
 }
 ```
+Please find an example below.
+Setup
+```
+// Constant Action type
+val ONE_ACTION = "ONE_ACTION"
+
+// Add Listener OnAction to the Action type
+OnAction.addOnAction(ONE_ACTION, object : OnAction.OnActionListener {
+    override fun onAction(it: Any) {
+        // Do something with 'it' which is the data returning from the action
+    }
+})
+```
+Trigger OnAction to all the Listeners sending data.
+```
+// This OnAction doAction sends 'New Text' for the type 'ONE_ACTION'
+OnAction.doAction(ONE_ACTION, "NEW TEXT")
+```
+Sending data, to easy, plan and simply.
