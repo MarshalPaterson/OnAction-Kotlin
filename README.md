@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/MarshalPaterson/OnAction.svg)](https://jitpack.io/#MarshalPaterson/OnAction) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/) 
+[![](https://jitpack.io/v/MarshalPaterson/OnAction.svg)](https://jitpack.io/#MarshalPaterson/OnAction) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)  
 
 # OnAction
 Android Library using Kotlin with the Observer Pattern. OnAction is a lightweight implementation that helps the over engineering on a app. Just want to get your API calls data to the UI the easiest way possible, OnAction is for you.
@@ -35,4 +35,4 @@ OnAction.doAction(ONE_ACTION, "NEW TEXT")
 Sending data, to easy, plan and simply.
 
 ## Contributor
-
+[![Marshal Paterson](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]
