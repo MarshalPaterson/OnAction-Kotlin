@@ -15,8 +15,7 @@ dependencies {
     implementation 'com.github.MarshalPaterson:OnAction:1.6.8'
 }
 ```
-Please find an example below.
-Setup
+First setup OnAction Type and Listener
 ```
 // Constant Action type
 val ONE_ACTION = "ONE_ACTION"
