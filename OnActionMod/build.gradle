@@ -56,6 +56,38 @@ android {
 //            }
 //        }
 //    }
+
+    artifactoryPublish.dependsOn('build')
+
+    publishing {
+
+        publications {
+
+            aar(MavenPublication) {
+
+                // from components.java
+
+                groupId = "com.github.MarshalPaterson"
+
+                artifactId = project.getName()
+
+                version = currentVersion
+
+                // Tell maven to prepare the generated "*.aar" file for publishing
+
+                artifact("$buildDir/outputs/aar/${project.getName()}-release.aar")
+
+            }
+
+        }
+
+    }
+
+    artifactoryPublish {
+
+        publications(publishing.publications.aar)
+
+    }
 }
 
 dependencies {
