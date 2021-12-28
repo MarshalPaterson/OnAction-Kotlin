@@ -35,4 +35,4 @@ OnAction.doAction(ONE_ACTION, "NEW TEXT")
 Sending data, to easy, plan and simply.
 
 ## Contributor
-[![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/remarkablemark/html-react-parser/graphs/contributors)
+
