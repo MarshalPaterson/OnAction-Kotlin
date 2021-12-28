@@ -36,4 +36,4 @@ Sending data, to easy, plan and simply.
 
 ## Contributor
 
-[![Marshal Paterson](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://github.com/MarshalPaterson) 
+[![Marshal Paterson](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://github.com/MarshalPaterson)  Marshal Paterson
