@@ -7,5 +7,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "OnAction"
+rootProject.name = "OnAction-Kotlin"
 include ':OnActionMod'
