@@ -12,7 +12,7 @@ repositories {
 Step 2. Add the dependency
 ```
 dependencies {
-    implementation 'com.github.MarshalPaterson:OnAction:1.6.8'
+    implementation 'com.github.MarshalPaterson:OnAction-Kotlin:2.0.1'
 }
 ```
 First setup OnAction Type and Listener
@@ -34,7 +34,7 @@ OnAction.doAction(ONE_ACTION, "NEW TEXT")
 ```
 Sending data, to easy, plan and simply.
 
-For a App example please find it at https://github.com/MarshalPaterson/OnActionExample
+### NOTE: From >2.0.1 the repo was renamed to OnAction-Kotlin
 
 ## Contributor
 
